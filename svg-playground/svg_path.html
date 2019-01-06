@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HelloD3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* outline: 1px solid #111 */
+        }
+
+        body {
+            position: relative;
+        }
+
+        #wrap_gid_line {
+            position: fixed;
+            z-index: -1;
+            width: 2000px;
+            height: 1000px;
+        }
+
+        .grid_row {
+            font-size: 0;
+        }
+
+        .grid_line {
+            width: 100px;
+            height: 100px;
+            border-right: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            display: inline-block;
+            box-sizing: border-box
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="wrap_gid_line">
+        <ul class="grid_row">
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+        </ul>
+        <ul class="grid_row">
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+        </ul>
+        <ul class="grid_row">
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+        </ul>
+        <ul class="grid_row">
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+        </ul>
+        <ul class="grid_row">
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+        </ul>
+        <ul class="grid_row">
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+        </ul>
+        <ul class="grid_row">
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+        </ul>
+        <ul class="grid_row">
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+        </ul>
+        <ul class="grid_row">
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+        </ul>
+        <ul class="grid_row">
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+        </ul>
+        <ul class="grid_row">
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+        </ul>
+        <ul class="grid_row">
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+            <li class="grid_line"></li>
+        </ul>
+    </div>
+    
+    <svg width="600" height="1000">
+        
+        <!-- 
+            path 可以畫出任意形狀
+            M-move to
+            L-line to
+                這裡的line to不是座標軸，而是移動多少距
+            Z-closepath
+                Z會從做後一個點連結到原點(M)
+         -->
+        <path d="M150 50 L75 200 L225 200 Z" fill="orange" />
+
+
+
+        <!-- 
+            其他代號
+            H-horizontal linto
+            V-vertical lineto
+            C-curveto
+                有六個參數(x, y, x1, y1, x2, y2)
+                1.曲線起始點(x,y)
+                2.貝茲把柄最遠的點(x1, y1)
+                3.曲線結束點(x2, y2)
+                
+            S-smooth curveto
+         -->
+        <path d="M150 250 L75 400 L225 400 C225 400 150 350 150 250" fill="pink" />
+        
+        <circle cx="150" cy="350" r="5" fill="grey" />
+        <line x1="225" y1="400"
+            x2="150" y2="350"
+            stroke="grey"
+            stroke-width="1"/>
+        <line x1="150" y1="350"
+              x2="150" y2="250"
+              stroke="grey"
+              stroke-width="1"/>
+
+
+         
+
+    </svg>
+
+    
+
+</body>
+</html>

@@ -3,7 +3,7 @@ const svg = d3.select('.canvas')
     .attr('width', 600)
     .attr('height', 600)
 
-d3.json('json/linear_scale.json').then(data => {
+d3.json('json/basic_chart_generate.json').then(data => {
 
 
     // 設邊距

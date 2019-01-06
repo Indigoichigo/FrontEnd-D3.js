@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="canvas">
+        
+    </div>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase-firestore.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyARaOGZzzxJ6HzMwcPp4r3Ei83KUm6h_Es",
+            authDomain: "udemy-d3-4874e.firebaseapp.com",
+            databaseURL: "https://udemy-d3-4874e.firebaseio.com",
+            projectId: "udemy-d3-4874e",
+            storageBucket: "udemy-d3-4874e.appspot.com",
+            messagingSenderId: "484721006130"
+        };
+        firebase.initializeApp(config);
+        const db = firebase.firestore();
+        db.settings({
+            timestampsInSnapshots: true
+        });
+    </script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="js/basic_chart_generate_from_firebase.js"></script>
+</body>
+</html>
